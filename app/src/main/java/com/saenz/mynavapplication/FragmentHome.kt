@@ -6,6 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_fragment_home.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -19,6 +22,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class FragmentHome : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -29,6 +33,7 @@ class FragmentHome : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        next_fragment_btn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.fragmentSecond, null))
     }
 
 
