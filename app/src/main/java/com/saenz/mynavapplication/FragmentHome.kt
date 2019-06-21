@@ -33,7 +33,7 @@ class FragmentHome : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        next_fragment_btn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.fragmentSecond, null))
+        next_fragment_btn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.next1, null))
     }
 
 

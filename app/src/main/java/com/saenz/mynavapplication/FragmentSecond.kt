@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_fragment_home.*
+import kotlinx.android.synthetic.main.fragment_fragment_second.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -31,7 +32,7 @@ class FragmentSecond : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        next_fragment_btn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.fragmentThird, null))
+        next_fragment_btn1.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.next2, null))
     }
 
 
